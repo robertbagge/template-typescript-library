@@ -39,10 +39,10 @@ Currently the following actions are run on every commit
 
 
 ## Publishing to NPM manually
-1. Compile the code
-   2. `npm run build`
-3. Publish the package
-   4. `npm publish`
+- Compile the code
+  - `npm run build`
+- Publish the package
+  - `npm publish`
 
 
 ## Appendices
