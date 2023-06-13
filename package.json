@@ -2,6 +2,10 @@
   "name": "@robertbagge/template-typescript-library",
   "version": "0.1.16",
   "description": "Template typescript library",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertbagge/template-typescript-library.git"
+  },
   "scripts": {
     "test": "jest",
     "lint": "eslint --ext .js,.ts src tests",
