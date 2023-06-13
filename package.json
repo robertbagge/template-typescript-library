@@ -7,7 +7,7 @@
     "lint": "eslint --ext .js,.ts src tests",
     "lint:fix": "eslint --ext .js,.ts --fix src tests",
     "format": "prettier --write \"**/*.+(js|ts|json)\"",
-    "typescript:compile": "tsc"
+    "build": "tsc"
   },
   "author": "Robert Bagge",
   "license": "ISC",
