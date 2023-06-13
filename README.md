@@ -1,4 +1,5 @@
 # Template Typescript Repository
+[NPM Package](https://www.npmjs.com/package/@robertbagge/template-typescript-library)
 ## Description
 This is a repository I use as a base for my typescript libraries. It includes a basic setup for typescript, eslint, prettier, jest and GitHub Actions.
 
