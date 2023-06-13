@@ -32,18 +32,29 @@ Always open for feedback if you think this repo can be improved further.
 ## CI/CD
 This repo is setup with GitHub Actions to automatically run tests and publish the package to NPM when a new tag is pushed to the repo.
 
-Currently the following actions are run on every commit
-- Format code - Formats code with Pretties and commits changes to the repo
-- Run tests - Runs tests and reports coverage
-- Bump version - Bumps minor version and commits to package.json
+The two configured workflows are:
+ - CI/CD main - Runs on every commit to main
+ - CI/CD PR - Runs on every commit to PR
 
 
-## Publishing to NPM manually
-- Compile the code
-  - `npm run build`
-- Publish the package
-  - `npm publish`
+### CI/CD main
+Actions run:
+- Code actions
+  - Format Code
+  - Test Code
+- Bump Minor version
+- Publish to NPM
 
+#### Publishing to NPM
+This happens automatically on every commit, which might not be ideal. Will probably change to publish when new tags are pushed to the repo in the future.
+
+If you fork this repo you will need to create a NPM account and generate a NPM token to use for publishing. You can then add the token as a secret to your repo and update the workflow to use the secret.
+
+### CI/CD PR
+Actions run:
+- Code actions
+  - Format Code
+  - Test Code
 
 ## Appendices
 
