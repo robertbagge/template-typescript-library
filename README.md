@@ -12,6 +12,7 @@ Always open for feedback if you think this repo can be improved further.
 - [Pre-requisites](#pre-requisites)
 - [Setup](#setup)
 - [Development](#development)
+- [CI/CD](#cicd)
 - [Publishing to NPM](#publishing-to-npm)
 - [Appendices](#appendices)
   - [Appendix A: Publishing to private NPM Registry](#appendix-a-publishing-to-private-npm-registry)
@@ -27,8 +28,16 @@ Always open for feedback if you think this repo can be improved further.
 - `npm run format` - Formats the code using prettier
 - `npm test` - Compiles code and runs tests
 
+## CI/CD
+This repo is setup with GitHub Actions to automatically run tests and publish the package to NPM when a new tag is pushed to the repo.
 
-## Publishing to NPM
+Currently the following actions are run on every commit
+- Format code - Formats code with Pretties and commits changes to the repo
+- Run tests - Runs tests and reports coverage
+- Bump version - Bumps minor version and commits to package.json
+
+
+## Publishing to NPM manually
 1. Compile the code
    2. `npm run build`
 3. Publish the package
