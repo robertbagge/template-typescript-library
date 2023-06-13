@@ -18,14 +18,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - name: format code
+      - name: run tests
         run: |
           npm install
-          npm run format
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v9.1.1
-        with:
-          author_name: ${{ github.actor }}
-          author_email: ${{ github.actor }}@users.noreply.github.com
-          message: "(Automatic) code formatting"
-          add: "."
+          npm test
