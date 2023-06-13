@@ -1,17 +1,18 @@
 # Template Typescript Repository
+## Description
+This is a repository I use as a base for my typescript libraries. It includes a basic setup for typescript, eslint, prettier, jest and GitHub Actions.
+
+Feel free to use this template, clone it and use it as a base for your own projects.
+
 ## Table of Contents
 - [Description](#description)
+- [Table of Contents](#table-of-contents)
 - [Pre-requisites](#pre-requisites)
 - [Setup](#setup)
 - [Development](#development)
 - [Publishing to NPM](#publishing-to-npm)
 - [Appendices](#appendices)
   - [Appendix A: Publishing to private NPM Repository](#appendix-a-publishing-to-private-npm-repository)
-
-## Description
-This is a repository I use as a base for my typescript libraries. It includes a basic setup for typescript, eslint, prettier, jest and GitHub Actions.
-
-Feel free to use this template, clone it and use it as a base for your own projects.
 
 ## Pre-requisites
 - Node 16.5.0 or newer
