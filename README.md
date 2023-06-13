@@ -4,6 +4,8 @@ This is a repository I use as a base for my typescript libraries. It includes a 
 
 Feel free to use this template, clone it and use it as a base for your own projects.
 
+Always open for feedback if you think this repo can be improved further.
+
 ## Table of Contents
 - [Description](#description)
 - [Table of Contents](#table-of-contents)
