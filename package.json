@@ -1,6 +1,6 @@
 {
   "name": "@robertbagge/template-ts-library",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Template typescript library",
   "scripts": {
     "test": "jest",
