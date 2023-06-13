@@ -14,7 +14,7 @@ Always open for feedback if you think this repo can be improved further.
 - [Development](#development)
 - [Publishing to NPM](#publishing-to-npm)
 - [Appendices](#appendices)
-  - [Appendix A: Publishing to private NPM Repository](#appendix-a-publishing-to-private-npm-repository)
+  - [Appendix A: Publishing to private NPM Registry](#appendix-a-publishing-to-private-npm-registry)
 
 ## Pre-requisites
 - Node 16.5.0 or newer
@@ -37,13 +37,13 @@ Always open for feedback if you think this repo can be improved further.
 
 ## Appendices
 
-### Appendix A: Publishing to private NPM Repository
-Once you have setup your private NPM repository, you can publish your package to it by running the following command:
+### Appendix A: Publishing to private NPM Registry
+Once you have setup your private NPM registry, you can publish your package to it by running the following command:
 ```
-npm publish --registry <Your repository URL here>
+npm publish --registry <Your registry URL here>
 ```
 
-To safeguard for accidentally publishing to the public NPM repository, you can add the following to your package.json, I usually do the following.
+To safeguard for accidentally publishing to the public NPM registry, you can add the following to your package.json, I usually do the following.
 Add a file pre-publish.js to the root of the project with the following content:
 
 ```
@@ -61,7 +61,7 @@ Then add a new `release` to the scripts section of your package.json:
 ```
 scripts: {
 ...,
-'release': 'RELEASE_MODE=True npm run build && npm publish --registry <Your repository URL here> && git push --follow-tags',
+'release': 'RELEASE_MODE=True npm run build && npm publish --registry <Your registry URL here> && git push --follow-tags',
 ...,
 }
 ```
