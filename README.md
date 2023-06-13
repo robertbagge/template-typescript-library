@@ -7,6 +7,10 @@ Feel free to use this template, clone it and use it as a base for your own proje
 
 Always open for feedback if you think this repo can be improved further.
 
+Features:
+- Typescript
+- GitHub Actions worklows for code linting, formatting, testing and publishing to NPM
+
 ## Table of Contents
 - [Description](#description)
 - [Table of Contents](#table-of-contents)
