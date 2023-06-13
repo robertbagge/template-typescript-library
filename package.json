@@ -1,0 +1,33 @@
+{
+  "name": "@robertbagge/template-ts-library",
+  "version": "0.1.0",
+  "description": "Template typescript library",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint --ext .js,.ts src tests",
+    "lint:fix": "eslint --ext .js,.ts --fix src tests",
+    "format": "prettier --write \"**/*.+(js|ts|json)\"",
+    "typescript:compile": "tsc"
+  },
+  "author": "Robert Bagge",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-typescript": "^7.21.4",
+    "@types/jest": "^29.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "babel-jest": "^29.5.0",
+    "eslint": "^8.38.0",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
